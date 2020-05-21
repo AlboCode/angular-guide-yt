@@ -1,4 +1,7 @@
-<h2>{{product.name}}</h2>
-<p>{{product.description}}</p>
-<h4>{{product.price}}</h4>
-<button>+</button>
+<div class="product-header">
+  <ng-content select="appProductItemTitle,[appProductItemTitle]"></ng-content>
+</div>
+<ng-content select="appProductItemDescription, [appProductItemDescription]"></ng-content>
+<div class="product-footer">
+  <ng-content select="appProductItemPrice,[appProductItemPrice]"></ng-content>
+</div>
